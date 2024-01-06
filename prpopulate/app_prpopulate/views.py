@@ -12,7 +12,7 @@ def open_pull_requests(request):
     # Replace with your GitHub username, repository, and access token
     github_username = 'chakratechgeek'
     repository_name = 'mywebpage'
-    github_token = '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'
+    github_token = 'xxxxxx'
 
     # GitHub API endpoint to get open pull requests
     url = f'https://api.github.com/repos/{github_username}/{repository_name}/pulls'
