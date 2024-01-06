@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Pull Requests</title>
+</head>
+<body>
+    <h1>Open Pull Requests</h1>
+    <ul>
+        {% for pull_request in pull_requests %}
+            <li>
+                <strong>Repository:</strong> {{ pull_request.repository_name }}<br>
+                <strong>Title:</strong> {{ pull_request.title }}<br>
+                <strong>State:</strong> {{ pull_request.state }}<br>
+                <strong>Created At:</strong> {{ pull_request.created_at }}<br>
+                <strong>Updated At:</strong> {{ pull_request.updated_at }}<br>
+                <strong>Closed At:</strong> {{ pull_request.closed_at }}<br>
+                <strong>Merged:</strong> {{ pull_request.merged }}<br>
+                <strong>Pull Request Link:</strong> <a href="{{ pull_request.html_url }}">View PR</a><br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
